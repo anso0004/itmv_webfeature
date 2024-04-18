@@ -1,0 +1,6 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  --beige: #f0eeea;
+}

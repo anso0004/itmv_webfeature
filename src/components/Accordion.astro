@@ -1,0 +1,44 @@
+---
+import "../styles/style.css"
+---
+
+<details class="styled_details">
+    <summary>
+        <slot/>
+    </summary>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aut dolorum voluptatibus suscipit voluptatum ipsum laboriosam dicta adipisci, magni beatae quas numquam, ea quo officia nisi exercitationem quasi sequi est.</p>
+</details>
+
+<style>
+    details,
+    summary {
+  margin-bottom: 0.5rem;
+  background-color: var(--beige);
+}
+
+.styled_details {
+  max-width: 300px;
+  background-color: var(--beige);
+}
+.styled_details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 0rem;
+  padding: 0.5rem;
+}
+
+/* Arrow icon */
+.styled_details summary::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0.5rem solid black;
+  border-inline: 0.4rem solid transparent;
+}
+details[open] > summary::after {
+  transform: rotate(-180deg);
+}
+</style>
