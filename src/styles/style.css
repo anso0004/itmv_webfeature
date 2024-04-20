@@ -1,6 +1,313 @@
+/* Generelt */
+
 * {
   box-sizing: border-box;
 }
 html {
   --beige: #f0eeea;
+}
+img {
+  width: 100%;
+}
+
+h1 {
+  background-color: #ffffff;
+  font-size: 96px;
+}
+
+h2 {
+  text-align: center;
+  padding: 0% 30%;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+p {
+  text-align: center;
+  padding: 0% 28%;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.396px;
+  color: #1e1e1e;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.absolut {
+  position: absolute;
+}
+
+/* Første sektion */
+.foerste_del {
+  background-color: var(--beige);
+  /* max-width: 880px; */
+  position: relative;
+  height: 2100px;
+}
+
+/* Placering af tekster */
+.overskrift {
+  margin-top: 13%;
+  margin-bottom: -3%;
+  margin-left: 5%;
+}
+
+.txt_afsnit1 {
+  text-align: center;
+  /* position: relative;
+  top: 15%; */
+  padding-top: 15%;
+}
+
+.txt_afsnit2 {
+  padding-top: 63%;
+}
+
+.txt1 {
+  /* top: 10%; */
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+.txt2 {
+  /* top: 20%; */
+  margin-bottom: 2%;
+}
+
+/* Placering af elementer */
+
+.kvinde_og_traad {
+  top: -16%;
+}
+.naalepude {
+  top: 5%;
+  left: 9%;
+  aspect-ratio: 218/202;
+  width: 13%;
+  transform: rotate(4.142deg);
+}
+
+.traad2 {
+  top: 17%;
+  right: 0;
+  aspect-ratio: 399/356;
+  width: 25%;
+}
+
+.knapper2 {
+  top: 27%;
+  right: 24%;
+  aspect-ratio: 162/127;
+  width: 11%;
+}
+
+.tavle1 {
+  top: 31%;
+  aspect-ratio: 502/453;
+  width: 35%;
+  left: 9%;
+}
+
+.tavle2 {
+  top: 37%;
+  aspect-ratio: 502/453;
+  width: 35%;
+  left: 55%;
+}
+
+.knapper4 {
+  top: 59%;
+  aspect-ratio: 245/169;
+  width: 15%;
+  left: 20%;
+}
+
+/* Anden del */
+
+.anden_del {
+  background-color: #3d5c6d;
+  height: 1000%;
+  position: relative;
+  padding-bottom: 60%;
+  padding-top: 5%;
+}
+
+.traad3 {
+  width: 22%;
+  top: -41%;
+}
+
+.orlena_fra_siden {
+  width: 22%;
+  right: 0;
+}
+
+.taleboble {
+  width: 50%;
+  left: 30%;
+  top: 4%;
+}
+
+.traad_og_knapper {
+  width: 15%;
+  top: 29%;
+  left: 4%;
+}
+
+.traad4 {
+  width: 38%;
+  right: 0;
+  top: 43%;
+}
+
+.accordion {
+  margin: auto;
+}
+
+.txt6 {
+  padding-top: 9%;
+  margin-top: -4%;
+}
+
+.container_taleboble {
+  background-image: url(../../public/baggrund/taleboble.svg);
+  background-size: cover;
+  aspect-ratio: 877/483;
+  background-position: center;
+  width: fit-content;
+  display: inline-block;
+  position: absolute;
+  top: 16%;
+  left: 22%;
+  width: 60%;
+}
+
+.txt7 {
+  /* position: absolute; */
+  padding-top: 14%;
+  /* display: inline-block; */
+}
+
+.txt_afsnit4 {
+  text-align: center;
+  padding-top: 43%;
+}
+
+.video_tavle {
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  display: flex;
+}
+
+/* Footer */
+.iconer {
+  display: flex;
+  flex-direction: row;
+  width: 10%;
+  gap: 5%;
+  margin: auto;
+  background-color: var(--beige);
+}
+
+.saks {
+  width: 10%;
+  bottom: 145%;
+  left: 20%;
+}
+
+footer {
+  position: relative;
+  background-color: var(--beige);
+  padding-top: 0%;
+  padding-bottom: 10%;
+  margin-top: -2%;
+}
+
+@media (max-width: 800px) {
+  p {
+    padding: 0px 9px;
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 25px;
+    padding-bottom: 13%;
+  }
+
+  .foerste_del {
+    background-color: var(--beige);
+    max-width: 880px;
+    position: relative;
+    height: 1400px;
+  }
+
+  .txt1 {
+    margin-bottom: 22%;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  .kvinde_og_traad {
+    top: -6%;
+  }
+
+  .naalepude {
+    display: none;
+  }
+
+  .traad2 {
+    top: 18%;
+    width: 36%;
+  }
+
+  .knapper2 {
+    top: 25%;
+    right: 21%;
+    width: 16%;
+  }
+
+  .tavle1 {
+    top: 41%;
+  }
+
+  .tavle2 {
+    top: 44%;
+  }
+
+  .knapper2 {
+    top: 38%;
+    right: 9%;
+    width: 16%;
+  }
+
+  .knapper4 {
+    top: 51%;
+  }
+
+  .txt_afsnit2 {
+    padding-top: 74%;
+  }
+
+  .traad3 {
+    width: 22%;
+    top: -21%;
+    left: -9%;
+  }
+
+  .txt_afsnit4 {
+    text-align: center;
+    padding-top: 70%;
+  }
+
+  .traad4 {
+    width: 38%;
+    right: 0;
+    top: 35%;
+  }
 }

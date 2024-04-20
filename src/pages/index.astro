@@ -1,25 +1,83 @@
 ---
-import Accordion from "../components/Accordion.astro"
+import Accordion from "../components/Accordion.astro";
+import Headeritmv from "../components/Headeritmv.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Webfeature</h1>
-		<Accordion>
-			<summary>Overskrift 1</summary>
-		</Accordion>
-		<Accordion>
-			<summary>Overskrift 2</summary>
-		</Accordion>
-		<Accordion>
-			<summary>Overskrift 3</summary>
-		</Accordion>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <header>
+      <Headeritmv />
+    </header>
+
+    <main>
+      <section class="overskrift">
+        <h1>Orlena</h1>
+      </section>
+      <section class="foerste_del">
+        <img class="absolut kvinde_og_traad" src="public/baggrund/Orlena_traad.svg" alt="kvinde og traad" />
+        <img class="absolut naalepude" src="public/baggrund/naalepude.svg" alt="nålepude" />
+        <article class="txt_afsnit1">
+          <p class="txt1">Hos I Tråd Med Verden er et team af dygtige og passioneret medarbejdere. En af dem er Olena, der hver dag bidrager med erfaring og engagement til teamet. Hun kan både sy, brodere og reparere produkter, og sammen med kollegaerne kaster hun sig ind i udfordringerne med at reparere og skabe smukke tekstiler.</p>
+          <p class="txt2">Lige nu arbejder hun og resten af teamet på et projekt om Kulturnatten i København, hvor de skaber banner og gardiner. Derudover er Olena også en fast del af repairteamet, hvor hendes mange års erfaring inden for syning og broderi skinner igennem alt, hvad hun gør.</p>
+        </article>
+        <img class="absolut traad2" src="public/baggrund/traad2.svg" alt="tråd 2" />
+        <img class="absolut knapper2" src="public/baggrund/2knapper.svg" alt="2 knapper" />
+        <img class="absolut tavle1" src="public/baggrund/tavle1.svg" alt="tavle 1" />
+        <img class="absolut tavle2" src="public/baggrund/tavle2.svg" alt="tavle 2" />
+        <img class="absolut knapper4" src="public/baggrund/4knapper.svg" alt="4 knapper" />
+        <article class="txt_afsnit2">
+          <p class="txt3">Olenas rejse til I Tråd Med Verden begyndte med en støttende hånd fra jobcentret, men det er hendes egen ildsjæl og kærlighed til håndværket, der virkelig har gjort hende til en uvurderlig del af teamet.</p>
+          <p class="txt4">Før Olena blev en del af I Tråd Med Verden levede hun med hendes familie i Ukraine, men på grund af krigen har de været nødsaget til at flygte til Danmark. I dag er hun rigtig glad for sit arbejde, og hun har gennem kollegaerne lært at tale og forstå dansk.</p>
+          <p class="txt5">Selvom Olena er glad for sin hverdag i Danmark, så drømmer hun om en dag at kunne vende tilbage til resten af familien i Ukraine. Hendes glæde ved at skabe smukke ting og hendes drømme om en lysere fremtid inspirerer hele teamet til at stræbe efter det bedste hver eneste dag.</p>
+        </article>
+      </section>
+      <section class="anden_del">
+        <img class="absolut traad3" src="public/baggrund/traad3.svg" alt="tråd 3" />
+        <p class="txt6">Olena håber på at blive genforenet med resten af hendes familie, der stadig befinder sig sig midt i konflikten i Ukraine.</p>
+        <img class="absolut orlena_fra_siden" src="public/baggrund/Orlena_fra_siden.svg" alt="Orlena fra siden" />
+        <!-- <img class="absolut taleboble" src="public/baggrund/taleboble.svg" alt="taleboble" /> -->
+        <div class="container_taleboble">
+          <p class="txt7">Mine drømme er, at krigen i Ukraine slutter. Fordi min mor, min far og min bror alle er i Ukraine.</p>
+        </div>
+        <img class="absolut traad_og_knapper" src="public/baggrund/traad_og_knapper.svg" alt="tråd og knapper" />
+        <article class="txt_afsnit4">
+          <h2>Om I tråd med verden</h2>
+          <p>Udforsk historien bag virksomheden, vores vision og mission samt de værdier, der driver os hver eneste dag.</p>
+          <img class="absolut traad4" src="public/baggrund/traad4.svg" alt="tråd 4" />
+        </article>
+        <section class="accordion">
+          <!-- <h5>Webfeature</h5> -->
+          <Accordion>
+            <summary>VI ER I TRÅD MED VERDEN</summary>
+          </Accordion>
+          <Accordion>
+            <summary>VORES MEDARBEJDERE</summary>
+          </Accordion>
+          <Accordion>
+            <summary>VI TAGER ANSVAR</summary>
+          </Accordion>
+        </section>
+      </section>
+      <section class="tredje_del">
+        <img class="video_tavle" src="public/baggrund/videotavle_m_txt.svg" alt="videotavle" />
+      </section>
+      <img class="footer" src="public/baggrund/footer_top.svg" alt="footer" />
+    </main>
+
+    <footer>
+      <img class="absolut saks" src="public/baggrund/saks.svg" alt="saks" />
+      <article class="iconer">
+        <img class="icon" src="public/baggrund/linkedin.svg" alt="linkedin" />
+        <img class="icon" src="public/baggrund/fb.svg" alt="facebook" />
+        <img class="icon" src="public/baggrund/instagram.svg" alt="instagram" />
+      </article>
+    </footer>
+  </body>
 </html>
