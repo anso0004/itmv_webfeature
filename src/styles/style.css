@@ -40,6 +40,10 @@ p {
   position: absolute;
 }
 
+.hvid {
+  color: white;
+}
+
 /* Første sektion */
 .foerste_del {
   background-color: var(--beige);
