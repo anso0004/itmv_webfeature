@@ -29,8 +29,10 @@ import Headeritmv from "../components/Headeritmv.astro";
         </article>
         <img class="absolut traad2" src="public/baggrund/traad2.svg" alt="tråd 2" />
         <img class="absolut knapper2" src="public/baggrund/2knapper.svg" alt="2 knapper" />
-        <img class="absolut tavle1" src="public/baggrund/tavle1.svg" alt="tavle 1" />
-        <img class="absolut tavle2" src="public/baggrund/tavle2.svg" alt="tavle 2" />
+        <!-- <img class="absolut knapper2 knapper_animation" src="public/baggrund/knap11.svg" alt="2 knapper" />
+        <img class="absolut knapper12 knapper_animation" src="public/baggrund/knap12.svg" alt="2 knapper" /> -->
+        <img class="absolut tavle1" src="public/baggrund/tavle5.svg" alt="tavle 1" />
+        <img class="absolut tavle2" src="public/baggrund/tavle6.svg" alt="tavle 2" />
         <img class="absolut knapper4" src="public/baggrund/4knapper.svg" alt="4 knapper" />
         <article class="txt_afsnit2">
           <p class="txt3">Olenas rejse til I Tråd Med Verden begyndte med en støttende hånd fra jobcentret, men det er hendes egen ildsjæl og kærlighed til håndværket, der virkelig har gjort hende til en uvurderlig del af teamet.</p>
@@ -42,10 +44,10 @@ import Headeritmv from "../components/Headeritmv.astro";
         <img class="absolut traad3" src="public/baggrund/traad3.svg" alt="tråd 3" />
         <p class="txt6 hvid">Olena håber på at blive genforenet med resten af hendes familie, der stadig befinder sig sig midt i konflikten i Ukraine.</p>
         <img class="absolut orlena_fra_siden" src="public/baggrund/Orlena_fra_siden.svg" alt="Orlena fra siden" />
-        <!-- <img class="absolut taleboble" src="public/baggrund/taleboble.svg" alt="taleboble" /> -->
-        <div class="container_taleboble">
+        <img class="absolut taleboble" src="public/baggrund/taleboble_m_txt.svg" alt="taleboble" />
+        <!-- <div class="container_taleboble">
           <p class="txt7">Mine drømme er, at krigen i Ukraine slutter. Fordi min mor, min far og min bror alle er i Ukraine.</p>
-        </div>
+        </div> -->
         <img class="absolut traad_og_knapper" src="public/baggrund/traad_og_knapper.svg" alt="tråd og knapper" />
         <article class="txt_afsnit4">
           <h2 class="hvid">Om I tråd med verden</h2>
@@ -56,28 +58,35 @@ import Headeritmv from "../components/Headeritmv.astro";
           <!-- <h5>Webfeature</h5> -->
           <Accordion>
             <summary>VI ER I TRÅD MED VERDEN</summary>
-          </Accordion>
-          <Accordion>
-            <summary>VORES MEDARBEJDERE</summary>
-          </Accordion>
-          <Accordion>
-            <summary>VI TAGER ANSVAR</summary>
+            <p class="accordion_txt">I Tråd Med Verden er en socialøkonomisk virksomhed drevet af foreningen I Tråd Med Verden. I partnerskab med KAB driver vi sy- og designværksteder i udsatte boligområder, hvor vi arbejder med design og genanvendelse af kasserede tekstiler som omdrejningspunkt for at skabe jobmuligheder, netværk og livskvalitet for mennesker, som har mistet fodfæste på arbejdsmarkedet.</p>
+            <p class="accordion_txt">Formålet er desuden at være en lokal ressource med henblik på at danne fællesskaber og genere viden omkring genanvendelse af tekstil. Vores arbejde er et lokalt og meget konkret bud på, hvordan man kan arbejde med bæredygtighed på tekstilområdet - en dagsorden, som presser sig voldsomt på, hvor det er nødvendigt at finde løsninger på de problemer tekstilindustrien skaber.</p>
           </Accordion>
         </section>
+        <Accordion>
+          <summary>VORES MEDARBEJDERE</summary>
+          <p class="accordion_txt">På værkstederne arbejder syerske i fleksjob eller småjob samt en gruppe borgere i virksomhedspraktik. Som medarbejder og praktikant indgår man i produktionen og i arbejdsfællesskabet sammen med værkstedernes faste team af designere og socialt fagligt personale.</p>
+          <p class="accordion_txt">Det faste team sørger for flow, fleksibilitet og tryghed i processen fra ide til færdigt produkt. Vi er eksperter i at imødekomme vores kunders ønsker og samtidig sikre, at vores medarbejdere trives i opgaven.</p>
+          <p class="accordion_txt">Vi tager altid udgangspunkt i den enkeltes ressourcer og har fokus på at arbejdet skal give succesoplevelser, motivation, glæde og en tro på fremtiden.</p>
+        </Accordion>
+        <Accordion>
+          <summary>VI TAGER ANSVAR</summary>
+          <p class="accordion_txt">Siden 2018 har vi været registreret som en socialøkonomisk virksomhed, der beskæftiger udsatte kvinder i Danmark.</p>
+          <p class="accordion_txt">Vi bidrager til et rummeligt arbejdsmarked ved at ansætte kvinder i ordinær beskæftigelse med fokus på kvindernes kompetencer og ressourcer, som skal sættes i spil på det danske arbejdsmarked. Vi tror på, at mennesker bliver gladere og stærkere af at arbejde med noget de brænder for. Desuden ønsker vi at bidrage til den grønne omstilling ved at skabe en cirkulær produktion, hvor kasserede tekstiler kan få nyt liv i stedet for at ende på forbrændingen.</p>
+        </Accordion>
       </section>
-      <section class="tredje_del">
-        <img class="video_tavle" src="public/baggrund/videotavle_m_txt.svg" alt="videotavle" />
-      </section>
-      <img class="footer" src="public/baggrund/footer_top.svg" alt="footer" />
     </main>
-
-    <footer>
-      <img class="absolut saks" src="public/baggrund/saks.svg" alt="saks" />
-      <article class="iconer">
-        <img class="icon" src="public/baggrund/linkedin.svg" alt="linkedin" />
-        <img class="icon" src="public/baggrund/fb.svg" alt="facebook" />
-        <img class="icon" src="public/baggrund/instagram.svg" alt="instagram" />
-      </article>
-    </footer>
+    <section class="tredje_del">
+      <video class="video" controls src="http://victoriamarkussen.dk/kea/09_indhold2/Olena_interview.mp4"></video>
+    </section>
+    <img class="footer" src="public/baggrund/footer_top.svg" alt="footer" />
   </body>
+
+  <footer>
+    <img class="absolut saks animation" src="public/baggrund/saks.svg" alt="saks" />
+    <article class="iconer">
+      <a href="#"> <img class="icon" src="public/baggrund/linkedin.svg" alt="linkedin" /></a>
+      <a href="#"> <img class="icon" src="public/baggrund/fb.svg" alt="facebook" /></a>
+      <a href="#"> <img class="icon" src="public/baggrund/instagram.svg" alt="instagram" /></a>
+    </article>
+  </footer>
 </html>

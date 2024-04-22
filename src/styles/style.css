@@ -13,6 +13,9 @@ img {
 h1 {
   background-color: #ffffff;
   font-size: 96px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -21,6 +24,7 @@ h2 {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
+  font-weight: 400;
 }
 
 p {
@@ -56,7 +60,7 @@ p {
 .overskrift {
   margin-top: 13%;
   margin-bottom: -3%;
-  margin-left: 5%;
+  margin-left: 12%;
 }
 
 .txt_afsnit1 {
@@ -107,6 +111,13 @@ p {
   width: 11%;
 }
 
+.knapper12 {
+  top: 27%;
+  right: 32%;
+  aspect-ratio: 162/127;
+  width: 5%;
+}
+
 .tavle1 {
   top: 31%;
   aspect-ratio: 502/453;
@@ -134,7 +145,7 @@ p {
   background-color: #3d5c6d;
   height: 1000%;
   position: relative;
-  padding-bottom: 60%;
+  padding-bottom: 13%;
   padding-top: 5%;
 }
 
@@ -151,19 +162,19 @@ p {
 .taleboble {
   width: 50%;
   left: 30%;
-  top: 4%;
+  top: 21%;
 }
 
 .traad_og_knapper {
   width: 15%;
-  top: 29%;
+  top: 46%;
   left: 4%;
 }
 
 .traad4 {
-  width: 38%;
+  width: 31%;
   right: 0;
-  top: 43%;
+  top: 63%;
 }
 
 .accordion {
@@ -175,7 +186,26 @@ p {
   margin-top: -4%;
 }
 
-.container_taleboble {
+/* .container_taleboble {
+  background-image: url(../../public/baggrund/taleboble.svg);
+  background-size: cover;
+  aspect-ratio: 877/483;
+  background-position: center;
+  width: fit-content;
+  display: inline-block;
+  position: absolute;
+  top: 16%;
+  left: 22%;
+  width: 60%;
+} */
+
+.txt7 {
+  /* position: absolute; */
+  padding-top: 14%;
+  /* display: inline-block; */
+}
+
+.txt7 {
   background-image: url(../../public/baggrund/taleboble.svg);
   background-size: cover;
   aspect-ratio: 877/483;
@@ -188,15 +218,15 @@ p {
   width: 60%;
 }
 
-.txt7 {
-  /* position: absolute; */
-  padding-top: 14%;
-  /* display: inline-block; */
-}
-
 .txt_afsnit4 {
   text-align: center;
   padding-top: 43%;
+}
+
+.tredje_del {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 8%;
 }
 
 .video_tavle {
@@ -205,6 +235,21 @@ p {
   margin-top: 5%;
   margin-bottom: 8%;
   display: flex;
+}
+
+.video {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 40%;
+  background-image: url(../../public/baggrund/videotavle_m_txt.svg);
+  background-size: cover;
+  aspect-ratio: 952/858;
+  background-position: center;
+  width: fit-content;
+  width: 45%;
+  padding: 5%;
+  padding-top: 16%;
 }
 
 /* Footer */
@@ -313,5 +358,111 @@ footer {
     width: 38%;
     right: 0;
     top: 35%;
+  }
+
+  .taleboble {
+    width: 88%;
+    left: 1%;
+    top: 15%;
+  }
+}
+
+/* ACCORDION  */
+
+.accordion_txt {
+  padding: 0;
+}
+
+summary {
+  margin-bottom: 0.5rem;
+  background-color: var(--beige);
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+.accordion_txt {
+  text-align: start;
+  margin: 0;
+  padding: 2%;
+}
+
+.styled_details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 0rem;
+  padding: 0.5rem;
+}
+
+/* Arrow icon */
+.styled_details summary::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0.5rem solid black;
+  border-inline: 0.4rem solid transparent;
+}
+details[open] > summary::after {
+  transform: rotate(-180deg);
+}
+
+/* Animation */
+
+.animation {
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    rotate: 10deg;
+  }
+  50% {
+    rotate: -10deg;
+  }
+  100% {
+    rotate: 10deg;
+  }
+  /* 50% {
+    rotate: -10deg;
+  }
+  100% {
+    rotate: 0deg;
+  } */
+}
+
+.knapper_animation {
+  animation-name: knapper_rotation;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes knapper_rotation {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+.knapper_animation1 {
+  animation-name: knapper_rotation1;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes knapper_rotation1 {
+  from {
+    rotate: 360deg;
+  }
+  to {
+    rotate: 0deg;
   }
 }

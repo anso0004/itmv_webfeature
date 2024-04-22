@@ -3,10 +3,7 @@ import "../styles/style.css";
 ---
 
 <details class="styled_details">
-  <summary>
-    <slot />
-  </summary>
-  <p class="accordion_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aut dolorum voluptatibus suscipit voluptatum ipsum laboriosam dicta adipisci, magni beatae quas numquam, ea quo officia nisi exercitationem quasi sequi est.</p>
+  <slot />
 </details>
 
 <style>
@@ -16,6 +13,8 @@ import "../styles/style.css";
     background-color: var(--beige);
     margin: auto;
     margin-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
   }
 
   .accordion_txt {
